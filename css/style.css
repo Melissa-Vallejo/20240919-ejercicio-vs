@@ -1,0 +1,73 @@
+main {
+    display: grid;
+    grid-template-areas: 
+        "borde ficha borde2";
+ 
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    
+}
+
+.borde {
+    display: grid;
+    grid-area: borde;
+    background-color: brown;
+}
+.borde2 {
+    display: grid;
+    grid-area: borde2;
+    background-color: brown;
+}
+
+.ficha {
+    /* Clase para la columna central */
+    display: grid;
+    grid-area: ficha;
+    /* background-color: cadetblue; */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: beige;
+    justify-content: space-around;
+
+}
+
+.foto_text {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+#img {
+    text-align: right;
+    border-color: 12px black;
+    align-self: center;
+    
+}
+
+
+div {
+    text-align: center;
+}
+
+
+.text{
+    margin-bottom: 2em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 3px 2px #d6d6d6;
+
+} 
+
+#title {
+    font-family: "Vast Shadow", serif;
+font-weight: 500;
+font-style: normal;
+color: black;
+text-shadow: -1px 0 BurlyWood, 0 1px BurlyWood, 1px 0 BurlyWood, 0 -1px BurlyWood;
+}
+ 
